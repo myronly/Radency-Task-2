@@ -17,6 +17,29 @@ interface INotesState {
 
 // Tool Types
 interface IToolNote {
-  id: string;
+  archived: boolean;
+  id?: string;
+  isEdit?: boolean;
+  editHandler?: () => void;
+  saveHandler?: () => void;
+}
+interface IEditActive {
+  active: boolean;
+}
+interface IToolLength {
+  name: string;
+  content: string;
+  dates: string;
+}
+interface IToolLengthModified {
+  name: string;
+  content: string;
+  dates: string;
+}
+
+// Table
+interface IChildTable {
+  children: React.ReactNode;
+  title: string;
   archived: boolean;
 }

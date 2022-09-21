@@ -151,28 +151,10 @@ table thead th:last-child {
   border-radius: 0 5px 5px 0;
 }
 
-table thead th:nth-child(2) {
-  width: 220px;
-}
-
-table thead th:nth-child(3) {
-  width: 140px;
-}
-
-table thead th:nth-child(4) {
-  width: 170px;
-}
-
-table thead th:nth-child(5) {
-  width: 210px;
-}
-
-table thead th:nth-child(6) {
-  width: 240px;
-}
-
 table.active__notes th:last-child,
-table.archive__notes th:last-child {
+table.archive__notes th:last-child,
+table.summary__notes th:last-child,
+table.list__notes th:last-child {
   width: 105px;
 }
 
@@ -241,12 +223,9 @@ table td .tools div svg {
 
 table td,
 table th {
+  height: 50px;
   padding: 10px;
   white-space: nowrap;
-}
-
-.status__notes {
-  margin-bottom: 70px;
 }
 
 .img__title {
@@ -284,7 +263,6 @@ table th {
   -ms-flex-align: center;
   align-items: center;
   height: 65px;
-  margin-bottom: 50px;
 }
 
 .create__note-btn {
@@ -313,13 +291,6 @@ select {
   width: 100%;
   padding: 5px 5px 5px 8px;
   border: 1px solid white;
-}
-
-#save,
-#edit,
-#archive,
-#unarchive {
-  display: none;
 }
 
 .create__note-form {
@@ -379,7 +350,14 @@ nav a {
   font-size: 24px;
   font-weight: 500;
   transition: 0.2s all;
+  padding: 4px 0 4px 0;
+  border-bottom: 1px solid white;
+  opacity: 0.8;
+}
+nav .active {
+  border-bottom: 1px solid #969696;
+  opacity: 1;
 }
 nav a:hover {
-  opacity: 0.8;
+  opacity: 1;
 }

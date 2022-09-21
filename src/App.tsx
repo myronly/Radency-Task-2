@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { CreateNote } from "./components/tools/CreateNote";
 // Layout
 import { Navbar } from "./layout/Navbar";
 // Pages
@@ -12,10 +13,11 @@ const App = () => {
     <div className="container">
       <Navbar />
       <Routes>
-        <Route path="/" element={<ActivePage />} />
+        <Route path="/active" element={<ActivePage />} />
         <Route path="/archive" element={<ArchivePage />} />
         <Route path="/status" element={<StatusPage />} />
       </Routes>
+      <CreateNote />
     </div>
   );
 };

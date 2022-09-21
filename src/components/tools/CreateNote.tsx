@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { v4 } from "uuid";
-import { addNote } from "../features/noteSlice";
+import moment from "moment";
+import { addNote } from "../../redux/features/noteSlice";
 
 export const CreateNote = () => {
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ export const CreateNote = () => {
     if (name === "" || category === "" || content === "") return;
     const note = {
       name: name,
-      created: "",
+      created: moment().format("ll"),
       category: category,
       content: content,
       dates: "",
