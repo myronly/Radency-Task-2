@@ -5,9 +5,7 @@ import { archiveNote, deleteNote } from "../../redux/features/noteSlice";
 export const ToolsNote: FC<IToolNote> = ({ id, archived, isEdit, editHandler, saveHandler }) => {
   const dispatch = useDispatch();
 
-  // Archive Note
   const archiveHandler = () => dispatch(archiveNote(id));
-  // Delete Note
   const deleteHandler = () => dispatch(deleteNote(id));
 
   return (

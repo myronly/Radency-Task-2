@@ -1,6 +1,4 @@
-import React from "react";
 import { useSelector } from "react-redux";
-// Components
 import { Note } from "../components/table/Note";
 import { Table } from "../layout/Table";
 

@@ -7,6 +7,7 @@ import { DatesFromContent } from "../assets/DatesFromContent";
 
 export const Note: FC<INote> = ({ name, created, category, content, id, archived }) => {
   const dispatch = useDispatch();
+
   const date: string = DatesFromContent(content);
   const modified = MaxLength({ name, content, date });
 

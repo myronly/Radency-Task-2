@@ -1,9 +1,8 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { CreateNote } from "./components/table/CreateNote";
-// Layout
+
 import { Navbar } from "./layout/Navbar";
-// Pages
+
 import { ActivePage } from "./pages/ActivePage";
 import { ArchivePage } from "./pages/ArchivePage";
 import { StatusPage } from "./pages/StatusPage";

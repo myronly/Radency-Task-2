@@ -15,7 +15,6 @@ const initialState: INotes = {
       created: "April 27, 2021",
       category: "Random Thought",
       content: "I'm gonna have a dentist appointment on the 3/5/2021, I moved it from 5/5/2021",
-
       id: "tyu-6ytu5-htr7",
       archived: true,
     },
@@ -24,7 +23,6 @@ const initialState: INotes = {
       created: "May 05, 2021",
       category: "Idea",
       content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-
       id: "yt-u65rt-hrth",
       archived: false,
     },
@@ -33,7 +31,6 @@ const initialState: INotes = {
       created: "May 07, 2021",
       category: "Quote",
       content: "The some content",
-
       id: "rth65-mghrrth-thrth",
       archived: false,
     },
@@ -42,7 +39,6 @@ const initialState: INotes = {
       created: "May 15, 2021",
       category: "Random Thought",
       content: "I'm gonna have a dentist appointment on the 3/5/2021, I moved it from 5/5/2021",
-
       id: "65rt-hrgh-mth",
       archived: false,
     },
@@ -51,7 +47,6 @@ const initialState: INotes = {
       created: "May 07, 2021",
       category: "Quote",
       content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-
       id: "65rt-gmhh-rth",
       archived: true,
     },
@@ -60,7 +55,6 @@ const initialState: INotes = {
       created: "April 27, 2021",
       category: "Random Thought",
       content: "I'm gonna have a dentist appointment on the 3/5/2021, I moved it from 5/5/2021",
-
       id: "g345m-h34565rth-gmhrth",
       archived: true,
     },
@@ -69,7 +63,6 @@ const initialState: INotes = {
       created: "April 20, 2021",
       category: "Task",
       content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-
       id: "6345-gmh5ghm-rthrth",
       archived: false,
     },

@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-// Components
 import { HeadNoteTable } from "../components/table/HeadNoteTable";
 
 export const Table: FC<IChildTable> = ({ children, title, archived }) => {

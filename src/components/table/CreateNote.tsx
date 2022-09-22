@@ -7,11 +7,8 @@ import { addNote } from "../../redux/features/noteSlice";
 export const CreateNote = () => {
   const dispatch = useDispatch();
 
-  // Toggle Create Form
   const [active, setActive] = useState(false);
   const setActiveHandler = () => setActive(!active);
-
-  // Add New Note
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
   const [content, setContent] = useState("");
@@ -23,14 +20,11 @@ export const CreateNote = () => {
       created: moment().format("ll"),
       category: category,
       content: content,
-      dates: "",
       id: v4(),
       archived: false,
     };
     dispatch(addNote(note));
     setActive(!active);
-
-    // Reset Form
     setName("");
     setCategory("");
     setContent("");
