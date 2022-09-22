@@ -24,7 +24,7 @@ export const StatusPage = () => {
           <tr>
             <td>
               <div className="img__title">
-                <img width="30" height="30" src="img/categories/Task.png" alt="Task" />
+                <img width="30" height="30" src="./img/categories/Task.png" alt="Task" />
               </div>
             </td>
             <td className="statusCategory">Task</td>
@@ -34,7 +34,7 @@ export const StatusPage = () => {
           <tr>
             <td>
               <div className="img__title">
-                <img width="30" height="30" src="img/categories/Idea.png" alt="Idea" />
+                <img width="30" height="30" src="./img/categories/Idea.png" alt="Idea" />
               </div>
             </td>
             <td className="statusCategory">Idea</td>
@@ -44,7 +44,7 @@ export const StatusPage = () => {
           <tr>
             <td>
               <div className="img__title">
-                <img width="30" height="30" src="img/categories/Random Thought.png" alt="Random Thought" />
+                <img width="30" height="30" src="./img/categories/Random Thought.png" alt="Random Thought" />
               </div>
             </td>
             <td className="statusCategory">Random Thought</td>
@@ -54,7 +54,7 @@ export const StatusPage = () => {
           <tr>
             <td>
               <div className="img__title">
-                <img width="30" height="30" src="img/categories/Quote.png" alt="Quote" />
+                <img width="30" height="30" src="./img/categories/Quote.png" alt="Quote" />
               </div>
             </td>
             <td className="statusCategory">Quote</td>

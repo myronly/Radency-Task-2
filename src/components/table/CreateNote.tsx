@@ -52,7 +52,7 @@ export const CreateNote = () => {
               </button>
             </div>
             <div onClick={setActiveHandler} className="close">
-              <img src="img/close.png" alt="close" />
+              <img src="./img/close.png" alt="close" />
             </div>
           </div>
         </form>

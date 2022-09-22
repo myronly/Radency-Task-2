@@ -29,7 +29,7 @@ export const Note: FC<INote> = ({ name, created, category, content, id, archived
     <tr>
       <td>
         <div className="img__title">
-          <img width="30" height="30" src={"img/categories/" + category + ".png"} alt={category} />
+          <img width="30" height="30" src={"./img/categories/" + category + ".png"} alt={category} />
         </div>
       </td>
       <td className="noteName" title={name}>
