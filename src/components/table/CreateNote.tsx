@@ -41,7 +41,7 @@ export const CreateNote = () => {
       {active ? (
         <form onSubmit={(e) => e.preventDefault()} className="create__note-form">
           <div className="create__note-form-wrapper">
-            <input onChange={(e) => setName(e.target.value)} id="newName" type="text" placeholder="Name" required />
+            <input onChange={(e) => setName(e.target.value.trim())} id="newName" type="text" placeholder="Name" required />
             <select onChange={(e) => setCategory(e.target.value)} id="newCategory" name="category" defaultValue="" required>
               <option value="" disabled>
                 Category
@@ -51,7 +51,7 @@ export const CreateNote = () => {
               <option value="Random Thought">Random Thought</option>
               <option value="Quote">Quote</option>
             </select>
-            <input onChange={(e) => setContent(e.target.value)} id="newContent" type="text" placeholder="Content" required />
+            <input onChange={(e) => setContent(e.target.value.trim())} id="newContent" type="text" placeholder="Content" required />
             <div className="create__note-add">
               <button onClick={addNoteHandler} className="add__note" type="submit">
                 Add

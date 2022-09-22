@@ -1,12 +1,14 @@
 import { FC, useState } from "react";
 import { useDispatch } from "react-redux";
 import { editNote } from "../../redux/features/noteSlice";
-import { ToolsNote } from "../tools/ToolsNote";
-import { MaxLength } from "../tools/MaxLength";
+import { ToolsNote } from "./ToolsNote";
+import { MaxLength } from "../assets/MaxLength";
+import { DatesFromContent } from "../assets/DatesFromContent";
 
-export const Note: FC<INote> = ({ name, created, category, content, dates, id, archived }) => {
+export const Note: FC<INote> = ({ name, created, category, content, id, archived }) => {
   const dispatch = useDispatch();
-  const modified = MaxLength({ name, content, dates });
+  const date: string = DatesFromContent(content);
+  const modified = MaxLength({ name, content, date });
 
   const [editIsActive, setEditIsActive] = useState(false);
   const toggleEditActive = () => {
@@ -17,7 +19,7 @@ export const Note: FC<INote> = ({ name, created, category, content, dates, id, a
   const [editCategory, setEditCategory] = useState(category);
   const [editContent, setEditContent] = useState(content);
   const saveNoteHandler = () => {
-    if (editName === "" || editCategory === "" || editContent === "") return;
+    if (editName.split(" ").join("") === "" || editCategory === "" || editContent.split(" ").join() === "") return;
     dispatch(editNote({ id, editName, editCategory, editContent }));
     toggleEditActive();
   };
@@ -53,8 +55,8 @@ export const Note: FC<INote> = ({ name, created, category, content, dates, id, a
       <td className="noteContent" title={content}>
         {!editIsActive ? <span>{modified.content}</span> : <input value={editContent} onChange={(e) => setEditContent(e.target.value)} type="text" placeholder="Content" required />}
       </td>
-      <td className="noteDates" title={dates}>
-        <span>{modified.dates}</span>
+      <td className="noteDates" title={date}>
+        <span>{modified.date}</span>
       </td>
       <td>
         <ToolsNote id={id} archived={archived} isEdit={editIsActive} editHandler={toggleEditActive} saveHandler={saveNoteHandler} />

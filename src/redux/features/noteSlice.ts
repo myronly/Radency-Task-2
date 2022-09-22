@@ -7,7 +7,6 @@ const initialState: INotes = {
       created: "April 20, 2021",
       category: "Task",
       content: "The some content",
-      dates: "",
       id: "tyut-yu546-6wer57",
       archived: false,
     },
@@ -15,8 +14,8 @@ const initialState: INotes = {
       name: "The theory of evolution",
       created: "April 27, 2021",
       category: "Random Thought",
-      content: "The some content",
-      dates: "",
+      content: "I'm gonna have a dentist appointment on the 3/5/2021, I moved it from 5/5/2021",
+
       id: "tyu-6ytu5-htr7",
       archived: true,
     },
@@ -25,7 +24,7 @@ const initialState: INotes = {
       created: "May 05, 2021",
       category: "Idea",
       content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      dates: "2021-05-03, 2021-05-05",
+
       id: "yt-u65rt-hrth",
       archived: false,
     },
@@ -34,7 +33,7 @@ const initialState: INotes = {
       created: "May 07, 2021",
       category: "Quote",
       content: "The some content",
-      dates: "",
+
       id: "rth65-mghrrth-thrth",
       archived: false,
     },
@@ -42,8 +41,8 @@ const initialState: INotes = {
       name: "Books",
       created: "May 15, 2021",
       category: "Random Thought",
-      content: "The some content",
-      dates: "2021-05-03",
+      content: "I'm gonna have a dentist appointment on the 3/5/2021, I moved it from 5/5/2021",
+
       id: "65rt-hrgh-mth",
       archived: false,
     },
@@ -52,7 +51,7 @@ const initialState: INotes = {
       created: "May 07, 2021",
       category: "Quote",
       content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      dates: "2021-05-03, 2021-05-05, 2022-02-23",
+
       id: "65rt-gmhh-rth",
       archived: true,
     },
@@ -60,8 +59,8 @@ const initialState: INotes = {
       name: "New Feature",
       created: "April 27, 2021",
       category: "Random Thought",
-      content: "The some content",
-      dates: "",
+      content: "I'm gonna have a dentist appointment on the 3/5/2021, I moved it from 5/5/2021",
+
       id: "g345m-h34565rth-gmhrth",
       archived: true,
     },
@@ -70,7 +69,7 @@ const initialState: INotes = {
       created: "April 20, 2021",
       category: "Task",
       content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      dates: "",
+
       id: "6345-gmh5ghm-rthrth",
       archived: false,
     },

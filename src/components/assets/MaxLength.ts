@@ -1,17 +1,17 @@
-export const MaxLength = ({ name, content, dates }: IToolLength) => {
-  const modified: IToolLengthModified = {
+export const MaxLength = ({ name, content, date }: IToolLength) => {
+  const modified: IToolLength = {
     name: name.length >= 20 ? (name = name.slice(0, 20) + "...") : name,
     content: content.length >= 20 ? (content = content.slice(0, 20) + "...") : content,
-    dates:
-      dates.split(",").length > 2
-        ? (dates =
+    date:
+      date.split(",").length > 2
+        ? (date =
             "..., " +
-            dates
+            date
               .split(",")
-              .slice(dates.split(",").length - 2)
+              .slice(date.split(",").length - 2)
               .join()
               .trim())
-        : dates,
+        : date,
   };
 
   return modified;

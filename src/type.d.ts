@@ -4,7 +4,6 @@ interface INote {
   created: string;
   category: string;
   content: string;
-  dates: string;
   archived: boolean;
   id: string;
 }
@@ -29,12 +28,7 @@ interface IEditActive {
 interface IToolLength {
   name: string;
   content: string;
-  dates: string;
-}
-interface IToolLengthModified {
-  name: string;
-  content: string;
-  dates: string;
+  date: string;
 }
 
 // Table

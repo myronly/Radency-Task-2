@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { CreateNote } from "./components/tools/CreateNote";
+import { CreateNote } from "./components/table/CreateNote";
 // Layout
 import { Navbar } from "./layout/Navbar";
 // Pages
