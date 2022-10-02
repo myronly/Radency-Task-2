@@ -4,13 +4,13 @@ export const Navbar = () => {
   return (
     <header>
       <nav>
-        <NavLink to={"/active"} className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink to={"Radency-Task-2/active"} className={({ isActive }) => (isActive ? "active" : "")}>
           Active
         </NavLink>
-        <NavLink to={"/archive"} className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink to={"Radency-Task-2/archive"} className={({ isActive }) => (isActive ? "active" : "")}>
           Archive
         </NavLink>
-        <NavLink to={"/status"} className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink to={"Radency-Task-2/status"} className={({ isActive }) => (isActive ? "active" : "")}>
           Status
         </NavLink>
       </nav>

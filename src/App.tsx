@@ -9,12 +9,12 @@ import { StatusPage } from "./pages/StatusPage";
 
 const App = () => {
   return (
-    <div className="container">
+    <div className="wrapper">
       <Navbar />
       <Routes>
-        <Route path="/active" element={<ActivePage />} />
-        <Route path="/archive" element={<ArchivePage />} />
-        <Route path="/status" element={<StatusPage />} />
+        <Route path="Radency-Task-2/active" element={<ActivePage />} />
+        <Route path="Radency-Task-2/archive" element={<ArchivePage />} />
+        <Route path="Radency-Task-2/status" element={<StatusPage />} />
       </Routes>
       <CreateNote />
     </div>
